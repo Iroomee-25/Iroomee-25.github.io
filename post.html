@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title id="post-title">게시글 - Iroomee's Blog</title>
+  <meta name="description" content="Iroomee의 개발 블로그">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Prism.js for code highlighting -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css">
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/prism.css">
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <span class="logo-icon">✨</span>
+        <span class="logo-text">Iroomee's Blog</span>
+      </a>
+      <div class="nav-actions">
+        <a href="index.html" class="back-button">← 목록으로</a>
+        <button id="theme-toggle" class="theme-toggle" aria-label="다크모드 토글">
+          <span class="theme-icon">🌙</span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Post Content -->
+  <article class="post-article">
+    <div class="container post-container">
+      <!-- Post Header -->
+      <header class="post-header">
+        <h1 id="post-title-display" class="post-title"></h1>
+        <div class="post-meta">
+          <time id="post-date" class="post-date"></time>
+          <div id="post-tags" class="post-tags"></div>
+        </div>
+      </header>
+
+      <!-- Post Body -->
+      <div id="post-content" class="post-content markdown-body">
+        <!-- Markdown content will be rendered here -->
+      </div>
+
+      <!-- Post Navigation -->
+      <nav class="post-navigation">
+        <a id="prev-post" class="post-nav-link prev" style="display: none;">
+          <span class="nav-label">← 이전 글</span>
+          <span class="nav-title"></span>
+        </a>
+        <a id="next-post" class="post-nav-link next" style="display: none;">
+          <span class="nav-label">다음 글 →</span>
+          <span class="nav-title"></span>
+        </a>
+      </nav>
+
+      <!-- Comments Section (Giscus) -->
+      <section class="comments-section">
+        <h2 class="comments-title">댓글</h2>
+        <div id="giscus-container" class="giscus-container">
+          <!-- Giscus comments will be loaded here -->
+        </div>
+      </section>
+    </div>
+  </article>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Iroomee. All rights reserved.</p>
+      <p>
+        <a href="https://github.com/Iroomee-25" target="_blank" rel="noopener">GitHub</a>
+      </p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-javascript.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-typescript.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-python.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-css.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-bash.min.js"></script>
+  
+  <script src="js/theme.js"></script>
+  <script src="js/post-loader.js"></script>
+</body>
+</html>
+
