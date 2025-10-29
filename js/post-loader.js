@@ -196,20 +196,23 @@
   // Load Giscus comments
   function loadGiscus() {
     const container = document.getElementById('giscus-container');
-    if (!container) return;
+    if (!container) {
+      console.warn('⚠️ [Post] Giscus 컨테이너를 찾을 수 없습니다');
+      return;
+    }
 
     console.log('💬 [Post] Giscus 댓글 시스템 로드 시작');
 
     const script = document.createElement('script');
     script.src = 'https://giscus.app/client.js';
     script.setAttribute('data-repo', 'Iroomee-25/Iroomee-25.github.io');
-    script.setAttribute('data-repo-id', 'YOUR_REPO_ID'); // TODO: Replace with actual repo ID
+    script.setAttribute('data-repo-id', 'R_kgDOQLNuKw');
     script.setAttribute('data-category', 'General');
-    script.setAttribute('data-category-id', 'YOUR_CATEGORY_ID'); // TODO: Replace with actual category ID
+    script.setAttribute('data-category-id', 'DIC_kwDOQLNuK84CxNKv');
     script.setAttribute('data-mapping', 'pathname');
     script.setAttribute('data-strict', '0');
     script.setAttribute('data-reactions-enabled', '1');
-    script.setAttribute('data-emit-metadata', '1');
+    script.setAttribute('data-emit-metadata', '0');
     script.setAttribute('data-input-position', 'bottom');
     script.setAttribute('data-theme', 'preferred_color_scheme');
     script.setAttribute('data-lang', 'ko');
@@ -218,7 +221,7 @@
 
     container.appendChild(script);
 
-    console.log('✅ [Post] Giscus 스크립트 로드 완료 (설정 필요)');
+    console.log('✅ [Post] Giscus 댓글 시스템 로드 완료');
   }
 
   // Format date to Korean format
