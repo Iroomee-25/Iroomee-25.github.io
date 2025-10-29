@@ -1,5 +1,14 @@
 [
   {
+    "file": "gyeongju-apec-summit.md",
+    "title": "경주 APEC 정상회의: 역사와 의미",
+    "date": "2025-10-29",
+    "tags": ["APEC", "경주", "국제회의", "역사"],
+    "category": "History",
+    "description": "2005년 경주에서 개최된 APEC 정상회의의 역사적 의미와 주요 내용을 알아봅니다.",
+    "excerpt": "2005년 11월, 천년 고도 경주는 세계의 주목을 받는 국제 무대가 되었습니다. 아시아·태평양 경제협력체 APEC 정상회의가 한국에서 개최되었고, 그 중심에 경주가 있었습니다. APEC이란? APEC Asia Pacific Economic Cooperation 는 아시아·태평양 지역의 경제 협력을 촉진하기 위해 1989년 설립된 국제기구입니다. 주요 특징 회원국: 21개 회원국 한국, 미국, 중국, 일본, 호주 등 목적: 자유무역 촉진, 경제 협력 강화 운영:..."
+  },
+  {
     "file": "example.md",
     "title": "첫 번째 게시글",
     "date": "2025-01-26",
@@ -9,4 +18,3 @@
     "excerpt": "Iroomee의 개발 블로그에 오신 것을 환영합니다. 이 블로그는 GitHub Pages와 Vanilla JavaScript로 구축된 정적 블로그입니다. 이 블로그는 다음과 같은 기능을 제공합니다: 다크 라이트 모드: 편안한 독서 환경 실시간 검색: 빠른 게시글 찾기 태그 필터링: 관심 주제별 분류 Giscus 댓글: GitHub Discussions 기반 반응형 디자..."
   }
 ]
-
